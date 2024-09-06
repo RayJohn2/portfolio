@@ -25,6 +25,9 @@ export class HomepageComponent {
   gotogithub() {
     window.open('https://github.com/RayJohn2', '_blank');
   }
+  gotocv() {
+    window.open('https://drive.google.com/drive/folders/1WvySj43EuXDYyydLeFepZU6uqcOnsN0R', '_blank');
+  }
 
   downloadFile() {
     const link = document.createElement('a');
