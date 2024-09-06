@@ -59,6 +59,7 @@ h5{
     animation: fadeInText 2s ease-in-out forwards; 
 }
 .copyright-container{
+    margin: 1rem 0;
     opacity: 0;
     animation: fadeInText 2s ease-in-out forwards; 
 }
@@ -80,5 +81,8 @@ h5{
     h3{
         text-align: center;
         justify-content: center;
+    }
+    .copyright-container{
+        margin: 0;
     }
 }
