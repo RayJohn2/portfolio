@@ -81,12 +81,17 @@ h6{
       opacity: 1;
     }
 }
-
 @keyframes colorChange {
     0%, 100% {
         color: #FFECD1;
     }
     50% {
         color: #001524;
+    }
+}
+@media (max-width: 768px) {
+    .main-container{
+        padding: 95px 15px 15px 15px;
+        min-height: 95vh;
     }
 }

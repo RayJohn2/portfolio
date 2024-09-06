@@ -10,8 +10,11 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+.logo{
+  margin-left: 1.5rem;
 }
 .logo-img{
     cursor: pointer;
@@ -44,11 +47,14 @@
 }
 
 @media (max-width: 768px) {
+  .main-container{
+    position: fixed;
+    z-index: 1;
+  }
   .hamburger-container {
     display: flex;
     background-color: #FF7D00;
     padding: 0;
-    margin: 10px 0 10px 0;
   }
   .burger-btn{
     border: 2px solid #001524;
@@ -60,21 +66,23 @@
     display: none;
     background: none;
     border: none;
-    display: none; /* Hidden by default */
+    display: none;
     flex-direction: column;
   }
   .logo{
     display: none;
     background: none;
     border: none;
-    display: none; /* Hidden by default */
+    display: none;
     flex-direction: column;
+    min-width: none;
+    margin: 0;
   }
   .nav-menu{
     display: none;
     background: none;
     border: none;
-    display: none; /* Hidden by default */
+    display: none;
     flex-direction: column;
   }
   .offcanvas{

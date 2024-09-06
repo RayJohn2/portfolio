@@ -128,9 +128,13 @@
     width: 80px;
   }
 }
-
 @keyframes fadeInText {
   to {
     opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .main-container{
+      padding: 95px 15px 15px 15px;
   }
 }

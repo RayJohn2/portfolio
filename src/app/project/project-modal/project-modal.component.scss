@@ -9,3 +9,13 @@
 h6{
     color: #FFECD1;
 }
+
+@media (max-width: 768px) {
+    .main-container{
+        padding: 95px 15px 15px 15px !important;
+    }
+    h3{
+        text-align: center;
+        justify-content: center;
+    }
+}

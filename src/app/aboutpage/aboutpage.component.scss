@@ -147,20 +147,21 @@ h6{
     height: 18px;
     transform: scale(1.2);
 }
-// .short-desc{
-//     animation: colorChange 3s ease-in-out infinite;
-// }
 @keyframes fadeInText {
     to {
       opacity: 1;
     }
 }
-
 @keyframes colorChange {
     0%, 100% {
         color: #FFECD1;
     }
     50% {
         color: #001524;
+    }
+}
+@media (max-width: 768px) {
+    .main-container{
+        padding: 95px 15px 0 15px;
     }
 }
