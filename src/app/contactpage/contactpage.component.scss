@@ -1,0 +1,76 @@
+.main-container{
+    min-height: 95vh;
+    background-color: #001524;
+    font-family: 'Poppins', sans-serif;
+    color: #FFECD1;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0 15px 0 15px;
+    margin: 0;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+h5{
+    padding: 0;
+    margin: 0;
+}
+.sub-container{
+    min-height: 70vh;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards; 
+}
+.sub-container1{
+    padding: 3rem 2rem 3rem 2rem;
+    margin: 0;
+    height: 100%;
+}
+.contact-container{
+    border: 1px solid white;
+    border-radius: 15px;
+    min-height: 70px;
+    max-width: 600px;
+    justify-content: space-between;
+}
+.email-container{
+    width: 70%; 
+    min-width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.link-item{
+    cursor: pointer;
+}
+.link-item:hover{
+    color: #FF7D00;
+}
+.linkedin-container{
+    width: 30%; 
+    min-width: 100px;
+}
+.email-icon{
+    margin-top: 2px;
+}
+.link-container{
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards; 
+}
+.copyright-container{
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards; 
+}
+@keyframes fadeInText {
+    to {
+      opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .contact-container{
+        justify-content: center;
+        align-items: center;
+    }
+}

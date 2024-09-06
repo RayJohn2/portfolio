@@ -1,0 +1,92 @@
+.main-container{
+    min-height: 95vh;
+    background-color: #001524;
+    font-family: 'Poppins', sans-serif;
+    color: #FFECD1;
+    padding: 0 15px 20px 15px;
+    margin: 0;  
+}
+h3{
+    padding: 0;
+    margin: 0;
+    color: #FF7D00;
+    font-weight: 500;
+    cursor: pointer;
+}
+h3:hover{
+    color: #FFECD1;
+}
+h6{
+    padding: 0;
+    margin: 0;
+}
+.sub-container1{
+    padding: 3rem 0 3rem 0;
+    margin: 0;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards; 
+}
+.container-card{
+    padding: 0;
+    margin: 0;
+}
+.sub-container-card{
+    width: 90%; 
+    max-width: 850px; 
+    padding: 10px 10px 0 10px; 
+    background-color: #001524;
+    border: 3px solid #FF7D00;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards; 
+}
+.thumbnail {
+    cursor: pointer;
+    width: 100%; 
+    height:100%; 
+    max-width: 800px; 
+    max-height: 400px; 
+    min-width: 200px; 
+    min-height: 100px;
+}
+.desc-container{
+    width: 100%;
+}
+.desc-sub-container{
+    width: 100%; 
+    max-width: 500px;
+}
+.body-title{
+    max-width: 400px;
+}
+.eye-container{
+    color: #FF7D00;
+}
+.eye-icon{
+    cursor: pointer;
+}
+.eye-icon:hover{
+    color: #FFECD1;
+}
+.note-container{
+    padding: 0;
+    margin: 0;
+}
+.note{
+    text-align: justify; 
+    max-width: 900px; 
+    min-width: 300px;
+}
+@keyframes fadeInText {
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        color: #FFECD1;
+    }
+    50% {
+        color: #001524;
+    }
+}

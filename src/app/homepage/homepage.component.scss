@@ -1,0 +1,136 @@
+.main-container{
+    min-height: 95vh;
+    background-color: #001524;
+    font-family: 'Poppins', sans-serif;
+    color: #FFECD1;
+    margin: 0;  
+}
+.sub-container{
+  min-height: 80vh;
+  opacity: 0;
+  animation: fadeInText 2s ease-in-out forwards; 
+}
+.profile-image{
+    border-radius: 50%;
+    border: 7px solid #FF7D00;
+    max-width: 400px;
+    max-height: 400px;
+    height: 90%;
+    width: 90%;
+    min-width: 150px;
+    min-height: 150px;
+    transition: transform 0.3s ease;
+}
+.profile-image:hover {
+  transform: translateY(-10px);
+}
+
+.desc-container {
+    color: #FFECD1;
+    text-align: center;
+    max-width: 400px;
+}
+.rj-name{
+    color: #FF7D00;
+}
+.btn-cv{
+  border-color: #FF7D00;
+    color: #FF7D00;
+    width: 45%;
+    text-decoration: none;
+    // border: 1px solid #FF7D00;
+    // border-radius: 6px;
+}
+.btn-cv:hover{
+    border-color: #FFECD1;
+    color: #FFECD1;
+}
+.btn-contact{
+    border-color: #FF7D00;
+    background-color: #FF7D00;
+    color: #001524;
+    width: 45%;
+}
+.btn-contact:hover{
+    border-color: #FFECD1;
+    background-color: transparent;
+    color: #FFECD1;
+}
+.small-icons{
+  cursor: pointer;
+}
+
+.slider {
+  height: 60px;
+  position: relative;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInText 2s ease-in-out forwards; 
+}
+.slider::before,
+.slider::after{
+  position:absolute;
+  background-image:linear-gradient(to right,#001524 0%,rgba(255,255,255,0) 100%);
+  content:'';
+  height:100%;width:25%;
+  z-index:2;pointer-events:none;
+}
+.slider::before{
+  left:0;
+  top:0;
+}
+.slider::after{
+  right:0;
+  top:0;
+  transform:rotateZ(180deg);
+}
+
+/*  IMPORTANT CODE BELOW */
+
+.slide-track {
+  width: calc(150px * 20);
+  display: flex;
+  animation: scroll 30s linear infinite;
+  justify-content: space-between;
+}
+.slide {
+  width: 150px;
+  height: 60px;
+
+  display: grid;
+  place-items: center;
+  transition:0.5s;
+  cursor:pointer;
+}
+.slide:hover{
+  transform:scale(0.8)
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(calc(-150px * 10));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide-track {
+    width: calc(80px * 20);
+  }
+
+  .slide {
+    width: 80px;
+  }
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+  }
+}

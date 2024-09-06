@@ -1,0 +1,85 @@
+<div class="main-container">
+  <div class="d-flex sub-container">
+    <div class="logo">
+      <a [routerLink]="'/home'">
+        <img class="logo-img" src="assets/images/rj2-logo.png" alt="Logo" height="45">
+      </a>
+    </div>
+    <!-- Navigation Menu -->
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav d-flex gap-lg-5 gap-md-4 gap-sm-3">
+        <li class="nav-item">
+          <a class="nav-link header-links" 
+            [routerLink]="'/home'" 
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header-links"
+            [routerLink]="'/about'" 
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]="{ exact: true }">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header-links"
+            [routerLink]="'/projects'" 
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]="{ exact: true }">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header-links" 
+            [routerLink]="'/contact'" 
+            routerLinkActive="active" 
+            [routerLinkActiveOptions]="{ exact: true }">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar hamburger-container bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="logo2">
+        <a [routerLink]="'/home'">
+          <img class="logo-img" src="assets/images/rj2-logo.png" alt="Logo" height="55">
+        </a>
+      </div>
+      <button class="navbar-toggler burger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title-mb">Menu</h5>
+          <!-- <mat-icon class="back-btn" (click)="goBack()" data-bs-dismiss="offcanvas">arrow_back</mat-icon> -->
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link header-links home-link" 
+                [routerLink]="'/home'" 
+                routerLinkActive="active" 
+                [routerLinkActiveOptions]="{ exact: true }" data-bs-dismiss="offcanvas">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-links about-link"
+                [routerLink]="'/about'" 
+                routerLinkActive="active" 
+                [routerLinkActiveOptions]="{ exact: true }" data-bs-dismiss="offcanvas">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-links about-link"
+                [routerLink]="'/projects'" 
+                routerLinkActive="active" 
+                [routerLinkActiveOptions]="{ exact: true }" data-bs-dismiss="offcanvas">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-links contact-link" 
+                [routerLink]="'/contact'" 
+                routerLinkActive="active" 
+                [routerLinkActiveOptions]="{ exact: true }" data-bs-dismiss="offcanvas">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

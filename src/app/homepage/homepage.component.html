@@ -1,0 +1,100 @@
+<div class="main-container align-items-center text-center">
+  <div class="d-flex align-items-center justify-content-center sub-container">
+    <div class="row mt-4 p-0" style="margin-left: 0; margin-right: 0;">
+      <div class="col mx-5">
+        <div class="logo">
+          <a>
+            <img class="profile-image" src="assets/images/profile-pic.jpg" alt="Profile">
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-center justify-content-center">
+        <div class="desc-container">
+          <h6 class="mt-3">Hello, I'm</h6>
+          <h1 class="mt-3 rj-name">Ray John</h1>
+          <h4 class="mt-3">Full-Stack Web Developer</h4>
+          <h6 class="mt-3" style="text-align: justify;">As a full-stack web developer, I thrive on creating interactive, high-performing applications that prioritize user experience and efficiency. My approach combines creativity with technical expertise to address the specific needs of each project effectively.</h6>
+          <div class="d-flex justify-content-between mt-4">
+            <!-- <a class="btn-cv d-flex align-items-center justify-content-center" href="/assets/files/cv-dino.pdf" download="cv-dino.pdf">Download Resume</a> -->
+            <button type="button" class="btn btn-outline btn-cv" (click)="downloadFile()">View My CV</button>
+            <button type="button" class="btn btn-contact" [routerLink]="'/contact'">Contact Info</button>
+          </div>
+          <div class="mt-4 text-center">
+            <a class="me-3">
+              <img class="small-icons" matTooltip="LinkedIn" src="assets/images/linkedin.png" (click)="gotolinkedin()" alt="LinkedIn" height="40">
+            </a>
+            <a class="ms-3">
+              <img class="small-icons" matTooltip="GitHub" src="assets/images/github.png" (click)="gotogithub()" alt="GitHub" height="40">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <h3 class="mb-4">My TechStacks</h3> -->
+  <div class="slider mt-4">
+    <div class="slide-track mb-4">
+      <div class="slide">
+        <img matTooltip="Angular" src="assets/images/angular-logo.png" alt="Angular" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="SQL Server" src="assets/images/ms-sql-logo.png" alt="SQL Server" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="C#" src="assets/images/csharp-logo.png" alt="C-Sharp" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip=".Net Core" src="assets/images/dotnetcore-logo.png" alt=".Net-Core" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Visual Studio Code" src="assets/images/vscode-logo.png" alt="VS-Code" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Visual Studio" src="assets/images/vs-logo.png" alt="VS" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Bitbucket" src="assets/images/bitbucket-logo.png" alt="Bitbucket" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Bamboo" src="assets/images/bamboo-logo.png" alt="Bamboo" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Jira Software" src="assets/images/jira-logo.png" alt="Jira-Software" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Azure" src="assets/images/azure-logo.png" alt="Azure" height="50">
+      </div>
+      <!-- same slides doubled (duplicate) -->
+      <div class="slide">
+        <img matTooltip="Angular" src="assets/images/angular-logo.png" alt="Angular" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="SQL Server" src="assets/images/ms-sql-logo.png" alt="SQL Server" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="C#" src="assets/images/csharp-logo.png" alt="C-Sharp" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip=".Net Core" src="assets/images/dotnetcore-logo.png" alt=".Net-Core" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Visual Studio Code" src="assets/images/vscode-logo.png" alt="VS-Code" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Visual Studio" src="assets/images/vs-logo.png" alt="VS" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Bitbucket" src="assets/images/bitbucket-logo.png" alt="Bitbucket" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Bamboo" src="assets/images/bamboo-logo.png" alt="Bamboo" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Jira Software" src="assets/images/jira-logo.png" alt="Jira-Software" height="50">
+      </div>
+      <div class="slide">
+        <img matTooltip="Azure" src="assets/images/azure-logo.png" alt="Azure" height="50">
+      </div>
+    </div>
+  </div>
+</div>

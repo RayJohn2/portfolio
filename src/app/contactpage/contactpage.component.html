@@ -1,0 +1,41 @@
+<div class="main-container align-items-center text-center">
+    <div class="d-flex align-items-center justify-content-center sub-container">
+        <div class="row d-flex align-items-center justify-content-center text-center sub-container1">
+            <h6>Get In Touch</h6>
+            <h1 class="mt-2 mb-4">Contact Me</h1>
+            <div class="row d-flex contact-container"> 
+                <div class="d-flex email-container"> 
+                    <div class="row justify-content-evenly">
+                        <div class="col" style="max-width: 40px;">
+                            <h1 class="material-icons text-center email-icon">email</h1>
+                        </div>
+                        <div class="col" style="max-width: 300px;">
+                            <h5 class="link-item" (click)="gotoemail()">{{email}}</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center linkedin-container"> 
+                    <div class="row justify-content-evenly">
+                        <div class="col" style="max-width: 40px;">
+                            <h1 class="material-icons text-center email-icon">email</h1>
+                        </div>
+                        <div class="col"  style="max-width: 80px;">
+                            <h5 class="link-item" (click)="gotogithub()">LinkedIn</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" d-flex justify-content-center align-items-center link-container">
+        <div class=" row d-flex justify-content-evenly align-items-center" style="width: 100%; max-width: 900px;">
+            <div class="col link-item" [routerLink]="'/home'"><h3>Home</h3></div>
+            <div class="col link-item" [routerLink]="'/about'"><h3>About</h3></div>
+            <div class="col link-item"[routerLink]="'/projects'"><h3>Project</h3></div>
+            <div class="col link-item"[routerLink]="'/contact'"><h3>Contact</h3></div>
+        </div>
+    </div>
+    <div class="mt-4 mb-4 copyright-container">
+        <h6>Copyright &copy; 2024 Ray John Dino, All Rights Reserved</h6>
+    </div>
+</div>
