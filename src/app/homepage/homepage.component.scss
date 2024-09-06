@@ -120,10 +120,18 @@
 }
 
 @media screen and (max-width: 768px) {
+  .main-container{
+    padding: 95px 15px 15px 15px;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
   .slide-track {
     width: calc(80px * 20);
   }
-
   .slide {
     width: 80px;
   }
@@ -131,10 +139,5 @@
 @keyframes fadeInText {
   to {
     opacity: 1;
-  }
-}
-@media (max-width: 768px) {
-  .main-container{
-      padding: 95px 15px 15px 15px;
   }
 }
