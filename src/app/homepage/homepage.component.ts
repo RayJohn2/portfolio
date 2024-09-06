@@ -26,7 +26,7 @@ export class HomepageComponent {
     window.open('https://github.com/RayJohn2', '_blank');
   }
   gotocv() {
-    window.open('https://drive.google.com/drive/folders/1WvySj43EuXDYyydLeFepZU6uqcOnsN0R', '_blank');
+    window.open('https://drive.google.com/file/d/1ys6_zxnAo6IsSl2SeHREaCVCh_0IFLYX/view?usp=sharing', '_blank'); 
   }
 
   downloadFile() {
